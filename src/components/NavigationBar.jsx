@@ -62,10 +62,8 @@ const NavbarComponent = () => {
 
   return (
     <div className='px-3 pb-3 pt-3 bg-dark shadow-lg'>
-      <Navbar color='dark' className='d-flex flex-wrap' dark className="dark" expand='md'>
-        {/* <NavbarBrand> */}
+      <Navbar color='dark' dark className="dark d-flex flex-wrap" expand='md'>
         <Link to='/' className='nav-link text-white fs-4 fw-bold me-5'>TENFLIX</Link>
-        {/* </NavbarBrand> */}
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto flex-wrap d-flex justify-content-between w-100" navbar>
@@ -91,21 +89,18 @@ const NavbarComponent = () => {
                         <Link to={`/movie/${genre.id}/${genre.name}`} onClick={dropdownToggle} className='nav-link text-dark'>{genre.name}</Link>
                       </DropdownItem>
                     ))}
-
                     <DropdownItem divider />
                   </Dropdown>
                   <Dropdown>
                     <DropdownToggle className='ms-2 nav-link text-dark fw-bolder fs-5' nav>
                       Tv
                     </DropdownToggle>
-
                     <DropdownItem divider />
                     {tvGenre.map((genre, index) => (
                       <DropdownItem key={index}>
                         <Link to={`/tv/${genre.id}/${genre.name}`} onClick={dropdownToggle} className='nav-link text-dark'>{genre.name}</Link>
                       </DropdownItem>
                     ))}
-
                   </Dropdown>
                 </DropdownMenu>
               </Dropdown>

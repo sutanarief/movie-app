@@ -17,17 +17,18 @@ const TopRatedList = (props) => {
     type,
   } = useParams()
 
+  const navigate = useNavigate()
+
   const getTopRated = async () => {
     try {
       const response = await get.getTopRatedByType(type)
       setDataList(response.data.results)
       setIsLoading(false)
     } catch (error) {
-
+      console.log(error)
     }
   }
 
-  const navigate = useNavigate()
 
   useEffect(() => {
     getTopRated()

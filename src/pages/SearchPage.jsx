@@ -13,11 +13,11 @@ const SearchPage = (props) => {
   const {
     title
   } = useParams()
+
   const navigate = useNavigate()
 
   const [isLoading, setIsLoading] = useState(true)
   const [dataList, setDataList] = useState([])
-
 
   const getSearch = async () => {
     try {
@@ -45,7 +45,6 @@ const SearchPage = (props) => {
         className='vh-100 d-flex flex-column gap-4 align-items-center justify-content-center'
       >
         <h1 className='text-white'>Can't find anything about "{title}"</h1>
-
         <div style={{ cursor: 'pointer', maxWidth: 'fit-content' }} className='text-white fs-5' onClick={() => navigate('/')}>
           <span>Back</span>
         </div>

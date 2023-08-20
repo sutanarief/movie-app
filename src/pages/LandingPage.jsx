@@ -91,9 +91,8 @@ const LandingPage = (props) => {
   return (
     <>
       {popular.length > 0 &&
-        <ImageSlider data={popular.slice(0, 1)} modalToggle={modalToggle} />
+        <ImageSlider data={popular.slice(0, 7)} modalToggle={modalToggle} />
       }
-
 
       {/* ====== Start Trending Section ====== */}
       <SectionContainer
@@ -133,7 +132,6 @@ const LandingPage = (props) => {
         modalToggle={modalToggle}
       />
       {/* ====== End Now Playing Section ======= */}
-
     </>
   )
 }

@@ -12,7 +12,6 @@ import SearchPage from './pages/SearchPage'
 import TopRatedList from './pages/TopRatedList'
 
 function App() {
-  const [count, setCount] = useState(0)
   const contentWrap = (component) => (
     <div className='d-flex flex-column gap-3 bg-dark'>
       <NavigationBar />

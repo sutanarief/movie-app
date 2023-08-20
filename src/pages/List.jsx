@@ -12,6 +12,7 @@ const List = (props) => {
   const [dataList, setDataList] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
+  const navigate = useNavigate()
   const {
     type,
     genreId,
@@ -25,11 +26,10 @@ const List = (props) => {
       setDataList(response.data.results)
       setIsLoading(false)
     } catch (error) {
-
+      console.log(error)
     }
   }
 
-  const navigate = useNavigate()
 
   useEffect(() => {
     getByGenre()
