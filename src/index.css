@@ -1,0 +1,86 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #242424;
+  --bs-modal-width: 90% !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.carousel {
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  backdrop-filter: blur(30px);
+  background-size: auto;
+}
+
+.carousel-item {
+  max-height: 400px;
+}
+
+.carousel-caption {
+  padding: 0 0 0 100px !important;
+  cursor: pointer;
+  border-top-right-radius: 100%;
+  background-color: rgba(36, 36, 36, 0.3);
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  height: 100%;
+  left: 0 !important;
+  right: 30% !important;
+  bottom: 0 !important;
+  text-align: left !important;
+}
+
+.carousel-caption>h3 {
+  margin-top: 180px !important;
+  margin-left: 35px !important;
+  max-width: fit-content;
+}
+
+
+.carousel-caption>p {
+  margin-left: 35px;
+  display: -webkit-box;
+  max-width: 60%;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 100em) {
+  .carousel-caption>h3 {
+    margin-left: 140px !important;
+  }
+
+  .carousel-caption>p {
+    margin-left: 140px;
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+}

@@ -1,0 +1,55 @@
+.custom-card {
+  width: 150px;
+  background-size: cover;
+  cursor: pointer;
+  transition-duration: .5s;
+}
+
+.custom-card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent !important;
+}
+
+.custom-card:hover {
+  transform: scale(1.1);
+}
+
+.custom-card-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-date {
+  font-size: 14px;
+}
+
+.card-ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.card-score {
+  position: relative;
+  box-sizing: border-box;
+  bottom: 25px;
+  text-align: center;
+  align-content: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 15px;
+  width: 50px;
+  /* padding: 25px; */
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  font-weight: 700;
+}
