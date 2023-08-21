@@ -19,8 +19,10 @@ const SectionContainer = (props) => {
     boxShadow,
     HeaderOptions,
     modalToggle,
-    getDetailData
+    getDetailData,
+    mediaType
   } = props
+
   return (
     <section
       className={`d-flex flex-column`}
@@ -50,6 +52,7 @@ const SectionContainer = (props) => {
             titleColor={titleColor}
             dateColor={dateColor}
             scoreTextColor={scoreTextColor}
+            mediaType={mediaType}
           />
         ))}
       </div>

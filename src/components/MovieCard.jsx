@@ -12,7 +12,8 @@ const MovieCard = (props) => {
     cardSize = '150px',
     imageWidth = '1280',
     titleColor = '#FFFFFF',
-    dateColor = '#D8CFCF'
+    dateColor = '#D8CFCF',
+    mediaType
   } = props
   const [onLoad, setOnLoad] = useState(true)
 
@@ -40,7 +41,7 @@ const MovieCard = (props) => {
     <div
       className='custom-card'
       {...(onHover && { onMouseEnter: () => onHover(index) })}
-      onClick={() => modalToggle(data)}
+      onClick={() => modalToggle(data, mediaType)}
     >
       <img
         width={`${cardSize}`}

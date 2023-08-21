@@ -110,7 +110,10 @@ const LandingPage = (props) => {
         title='Popular'
         textColor='#212529'
         bgColor='bg-white'
-        datas={popular}
+        datas={popular.map((data) => (
+          { ...data, media_type: isPopularActive }
+        ))}
+        mediaType={isPopularActive}
         scoreBgColor='bg-white'
         scoreTextColor='#212529'
         titleColor='#212529'
